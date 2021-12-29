@@ -30,8 +30,23 @@
     age: number;
   }
 
+  // Union Type
   function askSomeone(someone: Developer | Person) {
     someone.name = '';
+    someone.skill
+    someone.age
   }
+  askSomeone({name: 'developer', skill:'web'});
+  askSomeone({name: 'captain', age: 100 });
+
+  // Intersection Type
+  function askSomeone2(someone: Developer & Person) {
+    someone.age
+    someone.name
+    someone.skill
+  }
+  askSomeone2({ name: 'developer', skill: 'web' });
+
+
 
 }
