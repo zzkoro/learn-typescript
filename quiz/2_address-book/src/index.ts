@@ -56,7 +56,10 @@ function fetchContacts(): Promise<Contact[]> {
     },
   ];
   return new Promise(resolve => {
-    setTimeout(() => resolve(contacts), 2000);
+    setTimeout(() => {
+      console.log('setTimeout called');
+      resolve(contacts);
+    }, 2000);
   });
 }
 
