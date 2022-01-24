@@ -40,5 +40,8 @@ var shoppingItem: Dropdown<string> = {
   title: 'hello'
 }
 
+// Best Common Type
+var arr = [1, 2 , true, 'a']
+
 
 

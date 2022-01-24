@@ -1,20 +1,4 @@
-// 이넘(Enum)
-enum PhoneType {
-  Home = 'home',
-  Office = 'office',
-  Studio = 'studio',
-}
-interface PhoneNumberDictionary {
-  [phone: string]: {
-    num: number;
-  };
-}
-
-interface Contact {
-  name: string;
-  address: string;
-  phones: PhoneNumberDictionary;
-}
+import { Contact, PhoneNumberDictionary, PhoneType } from './types';
 
 // api
 // TODO: 아래 함수의 반환 타입을 지정해보세요.
@@ -109,3 +93,5 @@ class AddressBook {
 
 let addressBook = new AddressBook();
 addressBook.findContactByPhone(111, PhoneType.Home);
+
+let div = document.querySelector('div'); // as HTMLDivElement;
